@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+// escaping closure
+func performNetworkMainUpdate(_ updated: @escaping () -> Void) {
+    
+    // dispach the main queue using asynchronous
+    DispatchQueue.main.async {
+        updated()
+    }
+}
