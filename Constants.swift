@@ -12,7 +12,10 @@ import Foundation
 
 struct Constants {
     
-    // 
+    // MARK: Flickr
+    struct Flickr {
+        static let APIBaseURL = " https://api.flickr.com/services/rest/"
+    }
     
     
     
