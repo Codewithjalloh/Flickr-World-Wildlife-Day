@@ -65,6 +65,10 @@ struct Constants {
         static let MediumURL = "url_m"
     }
     
+    // MARK: Flickr Response Values
+    struct FlickrResponseValues {
+        static let OKStatus = "ok"
+    }
     
     
     
