@@ -65,9 +65,9 @@ class ViewController: UIViewController {
     }
     
     
-    // MARK: Helper for escaping Paramaters in URL
+    // MARK: Helper for escaping Parameters in URL
     private func escapedParameters(_ parameters: [String: AnyObject]) -> String {
-        
+        print("here")
     }
     
 
