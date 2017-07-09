@@ -18,5 +18,15 @@ struct Constants {
     }
     
     
+    struct FlickrParameterKeys {
+        static let Method = "method"
+        static let APIKey = "api_key"
+        static let GalleryID = "gallery_id"
+        static let Extras = "extras"
+        static let Format = "format"
+        static let NoJSONCallback = "nojsoncallback"
+    }
+    
+    
     
 }
