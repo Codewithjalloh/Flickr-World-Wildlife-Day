@@ -52,9 +52,7 @@ class ViewController: UIViewController {
     private func getImageFromFlickr() {
         
         let methodParameters = [
-            
             // Call from the Constants.swift file
-            
             Constants.FlickrParameterKeys.Method : Constants.FlickrParameterValues.GalleryPhotosMethod,
             Constants.FlickrParameterKeys.APIKey : Constants.FlickrParameterValues.APIKey,
             Constants.FlickrParameterKeys.GalleryID : Constants.FlickrParameterValues.GalleryID,
@@ -67,8 +65,10 @@ class ViewController: UIViewController {
     }
     
     
-    
-    private
+    // MARK: Helper for escaping Paramaters in URL
+    private func escapedParameters(_ parameters: [String: AnyObject]) -> String {
+        
+    }
     
 
 }
