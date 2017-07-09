@@ -42,7 +42,6 @@
 		58FF999B1F113932009759F3 = {
 			isa = PBXGroup;
 			children = (
-				58FF99BB1F114837009759F3 /* Constants.swift */,
 				58FF99A61F113932009759F3 /* Flickr World Wildlife Day */,
 				58FF99A51F113932009759F3 /* Products */,
 			);
@@ -59,6 +58,7 @@
 		58FF99A61F113932009759F3 /* Flickr World Wildlife Day */ = {
 			isa = PBXGroup;
 			children = (
+				58FF99BB1F114837009759F3 /* Constants.swift */,
 				58FF99A71F113933009759F3 /* AppDelegate.swift */,
 				58FF99A91F113933009759F3 /* ViewController.swift */,
 				58FF99B91F113B39009759F3 /* BlackBox.swift */,
@@ -320,6 +320,7 @@
 				58FF99B81F113933009759F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
