@@ -61,6 +61,11 @@ class ViewController: UIViewController {
             Constants.FlickrParameterKeys.NoJSONCallback : Constants.FlickrParameterValues.DisableJSONCallbacl
         ]
         
+        // create url and request
+        let session = URLSession.shared
+        let urlString = Constants.Flickr.APIBaseURL + escapedParameters(methodParameters as [String:AnyObject])
+        let url = URL(string: urlString)!
+        let request = URLRequest(url: url)
         
         
         
