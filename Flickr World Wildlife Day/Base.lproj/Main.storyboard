@@ -37,6 +37,9 @@
                                 <state key="normal" title="Get Animal Image">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="getNewImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfp-cT-wkb"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RQ6-O2-u1Q">
                                 <rect key="frame" x="16" y="73" width="343" height="538"/>
@@ -55,6 +58,11 @@
                             <constraint firstItem="JOV-0d-AEZ" firstAttribute="leading" secondItem="RQ6-O2-u1Q" secondAttribute="leading" id="vEM-af-hJx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getImageButton" destination="XFz-7i-4Cs" id="20O-IG-CQU"/>
+                        <outlet property="nameTitleLabel" destination="JOV-0d-AEZ" id="YVc-de-mCo"/>
+                        <outlet property="photoImageView" destination="RQ6-O2-u1Q" id="oWq-nQ-nz6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
