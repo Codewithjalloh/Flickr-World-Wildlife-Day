@@ -59,8 +59,20 @@ class ViewController: UIViewController {
             Constants.FlickrParameterKeys.Extras : Constants.FlickrParameterValues.MediumURL,
             Constants.FlickrParameterKeys.Format : Constants.FlickrParameterValues.ResonseFormat,
             Constants.FlickrParameterKeys.NoJSONCallback : Constants.FlickrParameterValues.DisableJSONCallbacl
-            
         ]
+        
+        
+        
+        
+        
+        // select a random animal photo
+        let randomPhotoIndex = Int(arc4random_uniform(UInt32(photoArray.count)))
+        let photoDictionary = photoArray[randomPhotoIndex] as [String:AnyObject]
+        let photoTitle = photoDictionary[Constants.FlickrResponseKeys.Title] as? String
+        
+        
+        
+        
         
     }
     
