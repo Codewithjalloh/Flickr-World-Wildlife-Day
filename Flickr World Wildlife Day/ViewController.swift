@@ -71,6 +71,23 @@ class ViewController: UIViewController {
         // create network request
         let task = session.dataTask(with: request) { (data, response, error) in
             
+            // if an error occurs, print it and re-enable the UI
+            func displayError(print error: String) {
+                print(error)
+                print("URL at time of error: \(url)")
+                
+                performNetworkMainUpdate {
+                    self.setUIEnable(trueOrFalse: true)
+                }
+            }
+            
+            // GUARD: was there an error?
+            guard (error == nil) else {
+                displayError(print: "There was an error with your request \(error!)")
+                return
+            }
+            
+            
         }
         
         
