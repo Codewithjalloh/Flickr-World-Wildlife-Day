@@ -67,7 +67,25 @@ class ViewController: UIViewController {
     
     // MARK: Helper for escaping Parameters in URL
     private func escapedParameters(_ parameters: [String: AnyObject]) -> String {
-        print("here")
+        
+        if parameters.isEmpty {
+            return ""
+        } else {
+            var keyValuePairs = [String]()
+            for (key, value) in parameters {
+                
+                
+                let stringValue = "\(value)"
+                
+                // escape
+                let escapedValue = stringValue.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+                
+                keyValuePairs.append(key + "=" + "\(escapedValue!)")
+            }
+            return "?\(keyValuePairs.joined(separator: "&"))"
+        }
+        
+        
     }
     
 
