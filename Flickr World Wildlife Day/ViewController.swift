@@ -88,6 +88,17 @@ class ViewController: UIViewController {
             }
             
             
+            // GUARD: did we get a successful 2xx response?
+            guard let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else  {
+                
+                displayError(print: "Your request returned a status code or other than 2xx!")
+                return
+            }
+            
+            
+            
+            
+            
         }
         
         
