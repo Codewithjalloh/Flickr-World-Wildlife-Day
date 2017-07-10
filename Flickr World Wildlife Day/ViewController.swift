@@ -68,6 +68,12 @@ class ViewController: UIViewController {
         let request = URLRequest(url: url)
         
         
+        // create network request
+        let task = session.dataTask(with: request) { (data, response, error) in
+            
+        }
+        
+        
         
         
         // select a random animal photo
