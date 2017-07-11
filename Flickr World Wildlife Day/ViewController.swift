@@ -130,15 +130,27 @@ class ViewController: UIViewController {
                 return
             }
             
+            
+            // select a random animal photo
+            let randomPhotoIndex = Int(arc4random_uniform(UInt32(photoArray.count)))
+            let photoDictionary = photoArray[randomPhotoIndex] as [String:AnyObject]
+            let photoTitle = photoDictionary[Constants.FlickrResponseKeys.Title] as? String
+            
+            
+            
+            // GUARD: Does our photo have a key for 'url_m'?
+            guard let imageURLString = photoDictionary[Constants.FlickrResponseKeys.MediumURL] as? String else {
+                displayError(print: "Cannot find key '\(Constants.FlickrResponseKeys.MediumURL)' in \(photoDictionary)")
+                return
+            }
+            
+            
         }
         
         
         
         
-        // select a random animal photo
-        let randomPhotoIndex = Int(arc4random_uniform(UInt32(photoArray.count)))
-        let photoDictionary = photoArray[randomPhotoIndex] as [String:AnyObject]
-        let photoTitle = photoDictionary[Constants.FlickrResponseKeys.Title] as? String
+        
         
         
         
