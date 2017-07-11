@@ -96,6 +96,11 @@ class ViewController: UIViewController {
             }
             
             
+            // GUARD: was there any data returned?
+            guard let data = data else {
+                displayError(print: "No data was return by the request!")
+                return
+            }
             
             
             
