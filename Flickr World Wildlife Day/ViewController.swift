@@ -145,14 +145,20 @@ class ViewController: UIViewController {
             }
             
             
+            // if an image exist at the url, set the image and title
+            let imageURL = URL(string: imageURLString)
+            if let imageData = try? Data(contentsOf: imageURL!) {
+                performNetworkMainUpdate {
+                    self.setUIEnable(trueOrFalse: true)
+                    self.photoImageView.image = UIImage(data: imageData)
+                    self.nameTitleLabel.text = photoTitle ?? "(Untitled)"
+                }
+            } else {
+                displayError(print: "Image does not exist at \(imageURL!)")
+            }
         }
-        
-        
-        
-        
-        
-        
-        
+        // start the task!
+        task.resume()
         
         
         
