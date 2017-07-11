@@ -125,7 +125,10 @@ class ViewController: UIViewController {
             
             
             // GUARD: Are the "photos" and "photo" keys in our result?
-            guard let photosDictionary = parse
+            guard let photosDictionary = parsedResult[Constants.FlickrResponseKeys.Photos] as? [String: AnyObject], let photoArray = photosDictionary[Constants.FlickrResponseKeys.Photo] as? [[String:AnyObject]] else {
+                displayError(print: "Cannot find keys '\(Constants.FlickrResponseKeys.Photos)' and '\(Constants.FlickrResponseKeys.Photo)' in \(parsedResult)")
+                return
+            }
             
         }
         
