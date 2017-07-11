@@ -117,6 +117,16 @@ class ViewController: UIViewController {
             }
             
             
+            // GUARD: did Flickr return an erro (stat != ok)?
+            guard let stat = parsedResult[Constants.FlickrResponseKeys.Status] as? String, stat == Constants.FlickrResponseValues.OKStatus else {
+                displayError(print: "Flickr API returned an error. See error code and message in \(parsedResult)")
+                return
+            }
+            
+            
+            // GUARD: Are the "photos" and "photo" keys in our result?
+            guard let photosDictionary = parse
+            
         }
         
         
