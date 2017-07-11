@@ -48,12 +48,12 @@ struct Constants {
     
     // MARK: Flickr Paramater Values
     struct FlickrParameterValues {
-        static let APIKey = "YOUR KEY" 
-        static let ResonseFormat = "json"
-        static let DisableJSONCallbacl = "1" // 1 means yes
         static let GalleryPhotosMethod = "flickr.galleries.getPhotos"
+        static let APIKey = "360f96bb4638d9109adc3eaa60f3221b"
         static let GalleryID = "72157677539266623"
         static let MediumURL = "url_m"
+         static let ResonseFormat = "json"
+        static let DisableJSONCallbacl = "1" // 1 means yes
     }
     
     // MARK: Flickr Response Keys

@@ -38,7 +38,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getNewImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfp-cT-wkb"/>
+                                    <action selector="getNewImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1yB-L6-EEc"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RQ6-O2-u1Q">
@@ -59,7 +59,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="getImageButton" destination="XFz-7i-4Cs" id="20O-IG-CQU"/>
+                        <outlet property="getImageButton" destination="XFz-7i-4Cs" id="LaM-q0-pRt"/>
                         <outlet property="nameTitleLabel" destination="JOV-0d-AEZ" id="YVc-de-mCo"/>
                         <outlet property="photoImageView" destination="RQ6-O2-u1Q" id="oWq-nQ-nz6"/>
                     </connections>
