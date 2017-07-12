@@ -56,6 +56,7 @@ struct Constants {
         static let DisableJSONCallbacl = "1" // 1 means yes
     }
     
+    
     // MARK: Flickr Response Keys
     struct FlickrResponseKeys {
         static let Status = "stat"
