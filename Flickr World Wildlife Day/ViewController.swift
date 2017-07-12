@@ -108,7 +108,6 @@ class ViewController: UIViewController {
             do {
                 parsedResult = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: AnyObject]
             }catch {
-                
                 displayError(print: "could not parse the data as JSON: '\(data)'")
                 return
             }

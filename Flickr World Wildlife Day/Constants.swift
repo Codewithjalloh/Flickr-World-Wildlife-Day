@@ -32,7 +32,7 @@ struct Constants {
     
     // MARK: Flickr
     struct Flickr {
-        static let APIBaseURL = " https://api.flickr.com/services/rest/"
+        static let APIBaseURL = "https://api.flickr.com/services/rest/"
     }
     
     // MARK: Flickr Paramater Keys
@@ -49,7 +49,7 @@ struct Constants {
     // MARK: Flickr Paramater Values
     struct FlickrParameterValues {
         static let GalleryPhotosMethod = "flickr.galleries.getPhotos"
-        static let APIKey = "360f96bb4638d9109adc3eaa60f3221b"
+        static let APIKey = "YOUR KEY"
         static let GalleryID = "72157677539266623"
         static let MediumURL = "url_m"
          static let ResonseFormat = "json"
