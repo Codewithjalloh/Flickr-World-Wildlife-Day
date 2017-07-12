@@ -8,7 +8,7 @@
 // full get galleries link
 //  https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=YOURKEY&gallery_id=72157677539266623&format=json&nojsoncallback=1&auth_token=72157683329763343-b1b1229db93edbf4&api_sig=05cf135ee202cc12694354f493653bce
 
-// project complete but room for improvement 
+ //project complete but room for improvement
 
 
 import UIKit
